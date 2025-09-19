@@ -90,7 +90,7 @@ while(w==1):
         else:
             print("enter the corret input")
             
-    elif (a==4):
+    elif (a==5):
         print("1.coffee-40/")
         print("2.milk-20/-")
         print("3.tea-10/-") 
