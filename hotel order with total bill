@@ -1,0 +1,122 @@
+print("welcome to dileep resturent")
+number=int(input("enter your 10 digits mobile number to show the menu +91"))
+w=1
+n=0
+while(w==1):
+    print("1.Tiffen items")
+    print("2.Lunch Meals")
+    print("3.Juice Items")
+    print("4.Snacks ")
+    print("5.milk produts")
+    print("6.total bill")
+    a=int(input("choose the menu"))
+    if (a==1):
+        print("1.idly 2 pecies-30/-")
+        print("2.dosa-40/-")
+        print("3.vada 2 pecies-30/-")
+        print("4.rava dosa-70/-")
+        print("5.masala dosa-80/-")
+        b=int(input("choose the tiffin"))
+        print(" your order is placed")
+        if (b==1):
+            print("your bill 30/-")
+            n=n+30
+        elif (b==2):
+            print("your bill 40/-")
+            n=n+40
+        elif (b==3):
+            print("your bill 30/-")
+            n=n+30
+        elif (b==4):
+            print("your bill 70/-")
+            n=n+70
+        elif (b==5):
+            print("your bill 80/-")
+            n=n+80
+        else:   
+            print("enter the corret input")
+            
+    elif (a==2):
+        print("1.full veg meals-100/-")
+        print("2.full non veg meals-150/-")
+        print("3.dum briyani-200/-")
+        c=int(input("choose the meals"))
+        print(" your order is placed")
+        if (c==1):
+            print("your bill 100/-")
+            n=n+100
+        elif (c==2):
+            print("your bill 150/-")
+            n=n+150
+        elif (c==3):
+            print("your bill 200/-")
+            n=n+200
+        else:
+            print("enter the corret input")
+            
+    elif (a==3):
+        print("1.banana juice-40/-")
+        print("2.carrot juice-50/-")
+        print("3.karbuja juice-70/-") 
+        d=int(input("choose the juice"))
+        print(" your order is placed")
+        if (d==1):
+            print("your bill 40/-")
+            n=n+40
+        elif (d==2):
+            print("your bill 50/-")
+            n=n+50
+        elif (d==3):
+            print("your bill 70/-")
+            n=n+70
+        else:
+            print("enter the corret input")
+            
+    elif (a==4):
+        print("1.somasa-40/")
+        print("2.french fries-50/-")
+        print("3.biscuts-20/-") 
+        e=int(input("choose the snacks"))
+        print(" your order is placed")
+        if (e==1):
+            print("your bill 40/-")
+            n=n+40
+        elif (e==2):
+            print("your bill 50/-")
+            n=n+50
+        elif (e==3):
+            print("your bill 20/-")
+            n=n+20
+        else:
+            print("enter the corret input")
+            
+    elif (a==4):
+        print("1.coffee-40/")
+        print("2.milk-20/-")
+        print("3.tea-10/-") 
+        f=int(input("choose the milk product"))
+        print(" your order is placed")
+        if (f==1):
+            print("your bill 40/-")
+            n=n+40
+        elif (f==2):
+            print("your bill 20/-")
+            n=n+20
+        elif (f==3):
+            print("your bill 10/-")
+            n=n+10
+        else:
+            print("enter the corret input")
+            
+    else:
+        w=2
+gst=n*0.18
+print("gst=",gst)
+if n>100:
+    print("discount-15%")
+    discount=n*0.15
+    totalbill=n+gst-discount
+    print("total bill=",totalbill)
+else:
+    t=n+gst
+    print("total bill=",t)
